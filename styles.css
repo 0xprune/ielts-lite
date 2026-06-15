@@ -865,6 +865,69 @@ ul {
 }
 
 /* ============================================================
+   TESTIMONI
+   ============================================================ */
+.testimoni-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.testimoni-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 28px 24px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s;
+}
+.testimoni-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+    border-color: var(--blue);
+}
+.testimoni-stars {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.testimoni-text {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.testimoni-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.testimoni-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue), #818cf8);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.testimoni-author strong {
+    display: block;
+    font-size: 15px;
+    color: #1e293b;
+}
+.testimoni-author span {
+    font-size: 13px;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+/* ============================================================
    FAQ
    ============================================================ */
 .faq-list {
@@ -1122,6 +1185,20 @@ ul {
     }
 }
 @media (max-width: 768px) {
+    .hero-skor-strip {
+        justify-content: center;
+    }
+    .hero-skor-badge {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    .hero-skor-num {
+        font-size: 18px;
+    }
+    .testimoni-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
     .nav-links,
     .navbar .btn {
         display: none;
@@ -1200,6 +1277,16 @@ ul {
     }
 }
 @media (max-width: 480px) {
+    .hero-skor-strip {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .hero-skor-badge {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
     .hero-content h1 {
         font-size: 28px;
     }
