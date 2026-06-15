@@ -708,6 +708,31 @@ ul {
     color: #1e40af;
 }
 
+/* Sosmed di tentang */
+.tentang-sosmed {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.sosmed-link {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #f0f6ff;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.sosmed-link:hover {
+    background: var(--blue);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 /* ============================================================
    SKOR (nyambung di tentang)
    ============================================================ */
@@ -1053,6 +1078,27 @@ ul {
 }
 .footer-col a:hover {
     color: var(--blue);
+}
+.footer-sosmed {
+    display: flex;
+    gap: 12px;
+}
+.footer-sosmed a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+.footer-sosmed a:hover {
+    background: var(--blue);
+    color: #fff;
+    transform: translateY(-2px);
 }
 .footer-bottom {
     padding: 20px 0;
