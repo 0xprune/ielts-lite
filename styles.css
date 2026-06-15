@@ -411,14 +411,14 @@ ul {
 /* Score badge strip */
 .hero-skor-strip {
     display: flex;
-    gap: 14px;
+    gap: 10px;
     margin-bottom: 32px;
     flex-wrap: wrap;
 }
 .hero-skor-badge {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 14px;
@@ -428,6 +428,7 @@ ul {
     color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(8px);
     transition: all 0.3s;
+    white-space: nowrap;
 }
 .hero-skor-badge:hover {
     background: rgba(255, 255, 255, 0.18);
@@ -1187,13 +1188,15 @@ ul {
 @media (max-width: 768px) {
     .hero-skor-strip {
         justify-content: center;
+        gap: 8px;
     }
     .hero-skor-badge {
-        padding: 8px 14px;
+        padding: 7px 12px;
         font-size: 12px;
+        border-radius: 10px;
     }
     .hero-skor-num {
-        font-size: 18px;
+        font-size: 16px;
     }
     .testimoni-grid {
         grid-template-columns: 1fr;
@@ -1278,14 +1281,15 @@ ul {
 }
 @media (max-width: 480px) {
     .hero-skor-strip {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
+        gap: 6px;
     }
     .hero-skor-badge {
-        width: 100%;
-        max-width: 200px;
-        justify-content: center;
+        padding: 6px 10px;
+        font-size: 11px;
+        border-radius: 8px;
+    }
+    .hero-skor-num {
+        font-size: 15px;
     }
     .hero-content h1 {
         font-size: 28px;
