@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
   initFaq();
   initScoreRing();
+  initBackToTop();
+  initScrollReveal();
 });
 
 function initNavbar() {
@@ -75,4 +77,39 @@ function initScoreRing() {
   );
 
   rings.forEach((r) => obs.observe(r));
+}
+
+function initBackToTop() {
+  const btn = document.getElementById("backToTop");
+  if (!btn) return;
+  window.addEventListener(
+    "scroll",
+    () => {
+      btn.classList.toggle("visible", window.scrollY > 500);
+    },
+    { passive: true },
+  );
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+function initScrollReveal() {
+  const els = document.querySelectorAll(
+    ".tentang-card, .skor-card, .keunggulan-card, .faq-item, .cta-card",
+  );
+  if (!els.length) return;
+  els.forEach((el) => el.classList.add("reveal"));
+  const obs = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -20px 0px" },
+  );
+  els.forEach((el) => obs.observe(el));
 }

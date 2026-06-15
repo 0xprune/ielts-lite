@@ -9,7 +9,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233b82f6'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Poppins' font-weight='800' font-size='18' fill='white'%3EL%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data untuk SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "IELTS Lite",
+    "description": "Kursus IELTS online bersama Ms. Ayy. Skor General 7.5, Academic 7.5, Reading 9.0. Simplify Learn, Score Higher.",
+    "provider": { "@type": "Person", "name": "Ms. Ayy" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "IDR", "description": "Konsultasi gratis" },
+    "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "Online" },
+    "teaches": ["IELTS Listening", "IELTS Reading", "IELTS Writing", "IELTS Speaking"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Apa itu IELTS dan kenapa aku butuh skornya?", "acceptedAnswer": {"@type": "Answer", "text": "IELTS (International English Language Testing System) adalah tes bahasa Inggris internasional yang menilai Listening, Reading, Writing, dan Speaking."}},
+      {"@type": "Question", "name": "Apa beda IELTS Academic vs General Training?", "acceptedAnswer": {"@type": "Answer", "text": "IELTS Academic untuk kuliah & registrasi profesional. IELTS General Training untuk migrasi, kerja non-akademik, atau sekolah menengah."}},
+      {"@type": "Question", "name": "Apa saja yang dipelajari di kelas IELTS Lite?", "acceptedAnswer": {"@type": "Answer", "text": "Kurikulum mencakup 4 skill utama: Listening, Reading, Writing, dan Speaking. Termasuk Pre-Test, Post-Test, dan feedback personal."}},
+      {"@type": "Question", "name": "Berapa lama durasi program IELTS Lite?", "acceptedAnswer": {"@type": "Answer", "text": "Kelas Reguler 2 bulan penuh. Kelas Privat durasi fleksibel 1-3 bulan."}},
+      {"@type": "Question", "name": "Apakah pemula bisa ikut?", "acceptedAnswer": {"@type": "Answer", "text": "Ya, IELTS Lite menerima semua level termasuk pemula."}}
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -23,7 +51,6 @@
       </a>
       <ul class="nav-links">
         <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#skor">Skor</a></li>
         <li><a href="#keunggulan">Keunggulan</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
@@ -92,7 +119,7 @@
   </section>
 
   <!-- ================================================================ -->
-  <!-- TENTANG MS. AYY -->
+  <!-- TENTANG MS. AYY + SKOR (gabung) -->
   <!-- ================================================================ -->
   <section class="tentang section" id="tentang">
     <div class="container">
@@ -119,15 +146,9 @@
           <a href="https://wa.me/6282322701412?text=halo%20miss%2C%20aku%20berminat%20belajar%20IELTS" target="_blank" rel="noopener" class="btn btn-wa">💬 Chat Ms. Ayy</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ================================================================ -->
-  <!-- SKOR -->
-  <!-- ================================================================ -->
-  <section class="skor section section-light" id="skor">
-    <div class="container">
-      <div class="section-header">
+      <!-- SKOR -- langsung nyambung tanpa section break -->
+      <div class="skor-header">
         <h2 class="section-title">Skor <span class="text-blue">Ms. Ayy</span></h2>
         <p class="section-subtitle">Bukan janji kosong — ini skor resmi yang sudah dibuktikan sendiri.</p>
       </div>
@@ -161,6 +182,7 @@
   </section>
 
   <!-- ================================================================ -->
+  <!-- KEUNGGULAN -->
   <!-- KEUNGGULAN — 6 kartu, 3x2 grid (mirip referensi) -->
   <!-- ================================================================ -->
   <section class="keunggulan section" id="keunggulan">
@@ -219,20 +241,36 @@
           <div class="faq-a"><p>IELTS (International English Language Testing System) adalah tes bahasa Inggris internasional yang menilai Listening, Reading, Writing, dan Speaking. Skor IELTS dibutuhkan untuk studi ke luar negeri, beasiswa (LPDP, dll), kerja di perusahaan multinasional, dan migrasi ke negara berbahasa Inggris.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q"><span>Beda IELTS Academic vs General Training?</span><i class="fas fa-plus faq-icon"></i></button>
-          <div class="faq-a"><p>IELTS Academic untuk kuliah & registrasi profesional. IELTS General Training untuk migrasi, kerja non-akademik, atau sekolah menengah. Ms. Ayy mengajar keduanya — dan sudah buktikan skor 7.5 di kedua jenis tes!</p></div>
+          <button class="faq-q"><span>Apa beda IELTS Academic vs General Training?</span><i class="fas fa-plus faq-icon"></i></button>
+          <div class="faq-a"><p>IELTS Academic untuk kuliah &amp; registrasi profesional. IELTS General Training untuk migrasi, kerja non-akademik, atau sekolah menengah. Ms. Ayy mengajar keduanya — dan sudah buktikan skor 7.5 di kedua jenis tes!</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q"><span>Apakah pemula bisa ikut kelas IELTS Lite?</span><i class="fas fa-plus faq-icon"></i></button>
-          <div class="faq-a"><p>Tentu! Program kami menerima semua level. Untuk pemula, kami sarankan mulai dengan sesi konsultasi dulu supaya Ms. Ayy bisa sesuaikan materi dengan level kamu.</p></div>
+          <button class="faq-q"><span>Apa saja yang dipelajari di kelas IELTS Lite?</span><i class="fas fa-plus faq-icon"></i></button>
+          <div class="faq-a"><p>Kurikulum mencakup 4 skill utama: Listening (berbagai aksen dan tipe soal), Reading (strategi pemahaman teks &amp; teknik skimming/scanning), Writing (esai Task 1 &amp; 2 sesuai kriteria band 7+), dan Speaking (simulasi interview Part 1, 2, &amp; 3). Termasuk Pre-Test, Post-Test, dan feedback personal dari Ms. Ayy.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q"><span>Berapa lama sampai aku bisa lihat progress?</span><i class="fas fa-plus faq-icon"></i></button>
-          <div class="faq-a"><p>Dengan Pre-Test di awal dan Post-Test berkala, kamu bisa lihat progress dalam 2-4 minggu pertama. Banyak siswa kami melaporkan peningkatan signifikan setelah setengah program berjalan.</p></div>
+          <button class="faq-q"><span>Berapa lama durasi program IELTS Lite?</span><i class="fas fa-plus faq-icon"></i></button>
+          <div class="faq-a"><p><strong>Kelas Reguler:</strong> 2 bulan penuh dengan sesi mingguan.<br><br><strong>Kelas Privat:</strong> Durasi fleksibel disesuaikan dengan kebutuhan dan target skor kamu. Bisa intensif 1 bulan atau santai 3 bulan — Ms. Ayy bakal sesuaikan ritme belajar kamu.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q"><span>Gimana cara daftarnya?</span><i class="fas fa-plus faq-icon"></i></button>
-          <div class="faq-a"><p>Tinggal klik tombol <strong>"Daftar via WhatsApp"</strong> atau langsung chat <strong>+62 823-2270-1412</strong>. Konsultasi GRATIS dulu — nggak ada kewajiban daftar!</p></div>
+          <button class="faq-q"><span>Apakah ada tes penempatan sebelum mulai?</span><i class="fas fa-plus faq-icon"></i></button>
+          <div class="faq-a"><p>Ya! Sebelum mulai, kamu akan mengerjakan Pre-Test singkat untuk mengetahui level awal. Hasilnya dipakai Ms. Ayy untuk menyusun materi yang pas — nggak terlalu gampang, nggak terlalu susah.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Apakah pemula bisa ikut?</span><i class="fas fa-plus faq-icon"></i></button>
+          <div class="faq-a"><p>Tentu! IELTS Lite menerima semua level. Untuk pemula, Ms. Ayy akan mulai dari fondasi — basic grammar, vocabulary building, dan pemahaman format tes — sebelum masuk ke strategi ujian yang lebih intensif. Yang penting ada kemauan belajar!</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Apakah ada simulasi ujian IELTS?</span><i class="fas fa-plus faq-icon"></i></button>
+          <div class="faq-a"><p>Ada! Kamu akan dapat akses ke modul latihan, sesi simulasi real-test dengan timer, dan feedback langsung dari Ms. Ayy. Simulasi ini dirancang semirip mungkin dengan ujian asli — biar kamu terbiasa dengan tekanan dan formatnya.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Gimana sistem belajarnya? Online atau offline?</span><i class="fas fa-plus faq-icon"></i></button>
+          <div class="faq-a"><p>100% online! Kelas dilakukan live via Zoom/Google Meet. Kalau kamu ada jadwal bentrok, sesi bisa direkam dan ditonton ulang. Plus, kamu bisa chat Ms. Ayy kapan aja di WhatsApp untuk tanya-tanya di luar jam kelas.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Gimana cara daftar dan bayarnya?</span><i class="fas fa-plus faq-icon"></i></button>
+          <div class="faq-a"><p>Gampang banget! Tinggal klik tombol <strong>"Daftar via WhatsApp"</strong> atau langsung chat <strong>+62 823-2270-1412</strong>. Nanti Ms. Ayy bakal jelasin detail program, jadwal, dan metode pembayaran. Konsultasi GRATIS — nggak ada kewajiban daftar!</p></div>
         </div>
       </div>
     </div>
@@ -272,7 +310,6 @@
           <h5>Navigasi</h5>
           <ul>
             <li><a href="#tentang">Tentang Ms. Ayy</a></li>
-            <li><a href="#skor">Skor</a></li>
             <li><a href="#keunggulan">Keunggulan</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
@@ -289,6 +326,17 @@
       <div class="container"><p>&copy; 2026 IELTS Lite. All rights reserved. | Simplify Learn. Score Higher.</p></div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/6282322701412?text=halo%20miss%2C%20aku%20berminat%20belajar%20IELTS" target="_blank" rel="noopener" class="floating-wa" aria-label="Chat WhatsApp" title="Chat Ms. Ayy di WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="floating-wa-pulse"></span>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>
