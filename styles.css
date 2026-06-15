@@ -733,6 +733,32 @@ ul {
     transform: translateY(-2px);
 }
 
+/* Info box di tentang */
+.tentang-info-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #475569;
+    border-bottom: 1px solid #f1f5f9;
+}
+.info-row:last-child {
+    border-bottom: none;
+}
+.info-row span {
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
 /* ============================================================
    SKOR (nyambung di tentang)
    ============================================================ */
